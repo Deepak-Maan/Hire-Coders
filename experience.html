@@ -7,7 +7,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/experience.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
 
+        .modal {
+            display: flex;
+            backdrop-filter: blur(10px);
+        }
+
+        body.modal-open {
+            overflow: hidden;
+        }
+
+        #close-modal {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
@@ -232,14 +253,16 @@
     </section>
 
     <!-- CHAT SECTION -->
+
     <section class="bg-chat">
         <div class="container mx-auto px-4 xl:max-w-[1172px]">
-            <div class="grid grid-cols-7">
-                <div class="col-span-4">
-                    <div class="relative overflow-hidden rounded-[12px]">
-                        <img src="./assets/images/webp/courtney-img.webp" alt="developer's image">
-                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2" src="./assets/images/svg/play-icon.svg"
-                            alt="video play icon">
+            <div class="grid grid-cols-1 lg:grid-cols-7 gap-5">
+                <div class="lg:col-span-4">
+                    <div onclick="PLAY_VIDEO()" class="relative overflow-hidden rounded-[12px]">
+                        <img class="w-[660px] h-[193px] min-[400px]:h-[280px] sm:h-[370px] object-cover rounded-[12px]"
+                            src="./assets/images/webp/courtney-img.webp" alt="developer's image">
+                        <img class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 sm:h-[57px] sm:w-[57px] cursor-pointer"
+                            src="./assets/images/svg/play-icon.svg" alt="video play icon">
                     </div>
                     <div class="pt-4">
                         <p class="font-inter font-semibold leading-130 text-dark-black text-2xl">Courtney Henry</p>
@@ -264,20 +287,106 @@
                                     d="M69.5943 0.446793L70.9002 4.4659L75.1262 4.46591L71.7073 6.94985L73.0132 10.969L69.5943 8.48502L66.1755 10.969L67.4814 6.94985L64.0625 4.46591L68.2885 4.4659L69.5943 0.446793Z"
                                     fill="#FFC700" />
                             </svg>
-
                         </span>
                         <p class="pt-4 font-normal text-base text-black opacity-70 font-inter leading-150">“Senectus
-                            tempus
-                            porttitor sed id dignissim. At
-                            et euismod adipiscing mattis
-                            vestibulum odio.
+                            tempus porttitor sed id dignissim. At et euismod adipiscing mattis vestibulum odio.
                             Curabitur consectetur commodo neque nullam aenean molestie tristique. Proin feugiat aenean
                             pulvinar eget nulla sagittis in. Nisi viverra fames quis consequat nullam”</p>
                     </div>
                 </div>
-                <div class="col-span-3">
+                <div class="lg:col-span-3">
                     <div
-                        class="max-w-[461px] bg-white max-h-[179px] ms-auto border border-light-grey px-2 py-3 rounded-[12px]">
+                        class="max-w-[461px] bg-white max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                        <div class="flex gap-[10px]">
+                            <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                            <div>
+                                <p class="text-dark-black text-lg font-semibold leading-117 font-inter">Eleanor Pena</p>
+                                <p class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                    Java
+                                    Developer</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between pt-1 pb-0.5">
+                            <span>
+                                <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                        fill="#FFC700" />
+                                    <path
+                                        d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                        fill="#FFC700" />
+                                    <path
+                                        d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                        fill="#FFC700" />
+                                    <path
+                                        d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                        fill="#FFC700" />
+                                    <path
+                                        d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                        fill="#FFC700" />
+                                </svg>
+
+                            </span>
+                            <p class="text-green">Experience: 10 Years</p>
+                        </div>
+                        <p class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                            “Senectus tempus
+                            porttitor sed
+                            id dignissim. At et
+                            euismod
+                            adipiscing mattis
+                            vestibulum odio.
+                            Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                    </div>
+                    <div
+                        class="max-w-[461px] mt-2 bg-white max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                        <div class="flex gap-[10px]">
+                            <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                            <div>
+                                <p class="text-dark-black text-lg font-semibold leading-117 font-inter">Eleanor Pena</p>
+                                <p class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                    Java
+                                    Developer</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between pt-1 pb-0.5">
+                            <span>
+                                <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                        fill="#FFC700" />
+                                    <path
+                                        d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                        fill="#FFC700" />
+                                    <path
+                                        d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                        fill="#FFC700" />
+                                    <path
+                                        d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                        fill="#FFC700" />
+                                    <path
+                                        d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                        fill="#FFC700" />
+                                </svg>
+
+                            </span>
+                            <p class="text-green">Experience: 10 Years</p>
+                        </div>
+                        <p class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                            “Senectus tempus
+                            porttitor sed
+                            id dignissim. At et
+                            euismod
+                            adipiscing mattis
+                            vestibulum odio.
+                            Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                    </div>
+                    <div
+                        class="max-w-[461px] mt-2 bg-white max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
                         <div class="flex gap-[10px]">
                             <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
                                 src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
@@ -325,6 +434,23 @@
             </div>
         </div>
     </section>
+
+    <!-- Modal Structure -->
+    <div onclick="CLOSE_MODAL()" id="video-modal"
+        class="modal opacity-0 pointer-events-none duration-300 fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+        <button onclick="CLOSE_MODAL()" class="absolute top-5 right-5 text-white text-5xl">&times;</button>
+        <div class=" rounded-lg flex items-center justify-center relative">
+
+            <video class="lg:w-1/2 w-[90%] h-[80%] lg:h-1/2 mx-auto rounded-[12px] " id="developer-video" controls>
+                <source src="./assets/videos/developer-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+
+
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const experiencecards = document.querySelectorAll('.experience-cards');
@@ -366,6 +492,34 @@
             window.addEventListener('resize', updateCardsVisibility);
             updateCardsVisibility();
         });
+    </script>
+    <script>
+        const PLAY_VIDEO = () => {
+            var modal = document.getElementById('video-modal');
+            var video = document.getElementById('developer-video');
+            modal.classList.remove('pointer-events-none');
+            modal.classList.remove('opacity-0');
+            document.body.classList.add('modal-open');
+            video.play();
+        };
+
+        const CLOSE_MODAL = () => {
+            var modal = document.getElementById('video-modal');
+            var video = document.getElementById('developer-video');
+            modal.classList.add('pointer-events-none');
+            modal.classList.add('opacity-0');
+            document.body.classList.remove('modal-open');
+            video.pause();
+            video.currentTime = 0;
+        };
+
+        document.getElementById('close-modal').addEventListener('click', CLOSE_MODAL);
+
+        document.getElementById('developer-video').addEventListener('ended', CLOSE_MODAL);
+
+
+
+
     </script>
     <script src="./tailwind.config.js"></script>
 </body>
