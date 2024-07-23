@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/experience.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -295,140 +296,459 @@
                     </div>
                 </div>
                 <div class="lg:col-span-3">
-                    <div
-                        class="max-w-[461px] bg-white max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
-                        <div class="flex gap-[10px]">
-                            <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
-                                src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
-                            <div>
-                                <p class="text-dark-black text-lg font-semibold leading-117 font-inter">Eleanor Pena</p>
-                                <p class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
-                                    Java
-                                    Developer</p>
+                    <div class="hidden lg:block">
+                        <div
+                            class="max-w-[461px] bg-white max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                            <div class="flex gap-[10px]">
+                                <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                    src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                                <div>
+                                    <p class="text-dark-black text-lg font-semibold leading-117 font-inter">Eleanor Pena
+                                    </p>
+                                    <p
+                                        class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                        Java
+                                        Developer</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex items-center justify-between pt-1 pb-0.5">
-                            <span>
-                                <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
-                                        fill="#FFC700" />
-                                </svg>
+                            <div class="flex items-center justify-between pt-1 pb-0.5">
+                                <span>
+                                    <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                            fill="#FFC700" />
+                                    </svg>
 
-                            </span>
-                            <p class="text-green">Experience: 10 Years</p>
+                                </span>
+                                <p class="text-green">Experience: 10 Years</p>
+                            </div>
+                            <p class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                                “Senectus tempus
+                                porttitor sed
+                                id dignissim. At et
+                                euismod
+                                adipiscing mattis
+                                vestibulum odio.
+                                Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
                         </div>
-                        <p class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
-                            “Senectus tempus
-                            porttitor sed
-                            id dignissim. At et
-                            euismod
-                            adipiscing mattis
-                            vestibulum odio.
-                            Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                        <div
+                            class="max-w-[461px] mt-2 bg-white max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                            <div class="flex gap-[10px]">
+                                <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                    src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                                <div>
+                                    <p class="text-dark-black text-lg font-semibold leading-117 font-inter">Eleanor Pena
+                                    </p>
+                                    <p
+                                        class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                        Java
+                                        Developer</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between pt-1 pb-0.5">
+                                <span>
+                                    <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                            fill="#FFC700" />
+                                    </svg>
+
+                                </span>
+                                <p class="text-green">Experience: 10 Years</p>
+                            </div>
+                            <p class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                                “Senectus tempus
+                                porttitor sed
+                                id dignissim. At et
+                                euismod
+                                adipiscing mattis
+                                vestibulum odio.
+                                Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                        </div>
+                        <div
+                            class="max-w-[461px] mt-2 bg-white max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                            <div class="flex gap-[10px]">
+                                <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                    src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                                <div>
+                                    <p class="text-dark-black text-lg font-semibold leading-117 font-inter">Eleanor Pena
+                                    </p>
+                                    <p
+                                        class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                        Java
+                                        Developer</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between pt-1 pb-0.5">
+                                <span>
+                                    <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                            fill="#FFC700" />
+                                        <path
+                                            d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                            fill="#FFC700" />
+                                    </svg>
+
+                                </span>
+                                <p class="text-green">Experience: 10 Years</p>
+                            </div>
+                            <p class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                                “Senectus tempus
+                                porttitor sed
+                                id dignissim. At et
+                                euismod
+                                adipiscing mattis
+                                vestibulum odio.
+                                Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                        </div>
                     </div>
-                    <div
-                        class="max-w-[461px] mt-2 bg-white max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
-                        <div class="flex gap-[10px]">
-                            <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
-                                src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
-                            <div>
-                                <p class="text-dark-black text-lg font-semibold leading-117 font-inter">Eleanor Pena</p>
-                                <p class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
-                                    Java
-                                    Developer</p>
+                    <div class="swiper developer-swiper lg:hidden -mr-4 sm:mr-0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide !w-[318px] sm:w-full">
+                                <div
+                                    class="max-w-[308px] sm:max-w-[461px] shadow-[0_4px_10px_0px_#00000014] bg-white max-h-[208px] lg:max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                                    <div class="flex gap-[10px]">
+                                        <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                            src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                                        <div>
+                                            <p class="text-dark-black text-lg font-semibold leading-117 font-inter">
+                                                Eleanor Pena
+                                            </p>
+                                            <p
+                                                class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                                Java
+                                                Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1 pb-0.5">
+                                        <span>
+                                            <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                                    fill="#FFC700" />
+                                            </svg>
+
+                                        </span>
+                                        <p class="text-green">Experience: 10 Years</p>
+                                    </div>
+                                    <p
+                                        class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                                        “Senectus tempus
+                                        porttitor sed
+                                        id dignissim. At et
+                                        euismod
+                                        adipiscing mattis
+                                        vestibulum odio.
+                                        Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide !w-[318px] sm:w-full">
+                                <div
+                                    class="max-w-[308px] sm:max-w-[461px] shadow-[0_4px_10px_0px_#00000014] bg-white max-h-[208px] lg:max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                                    <div class="flex gap-[10px]">
+                                        <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                            src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                                        <div>
+                                            <p class="text-dark-black text-lg font-semibold leading-117 font-inter">
+                                                Eleanor Pena
+                                            </p>
+                                            <p
+                                                class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                                Java
+                                                Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1 pb-0.5">
+                                        <span>
+                                            <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                                    fill="#FFC700" />
+                                            </svg>
+
+                                        </span>
+                                        <p class="text-green">Experience: 10 Years</p>
+                                    </div>
+                                    <p
+                                        class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                                        “Senectus tempus
+                                        porttitor sed
+                                        id dignissim. At et
+                                        euismod
+                                        adipiscing mattis
+                                        vestibulum odio.
+                                        Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide !w-[318px] sm:w-full">
+                                <div
+                                    class="max-w-[308px] sm:max-w-[461px] bg-white max-h-[208px] shadow-[0_4px_10px_0px_#00000014] lg:max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                                    <div class="flex gap-[10px]">
+                                        <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                            src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                                        <div>
+                                            <p class="text-dark-black text-lg font-semibold leading-117 font-inter">
+                                                Eleanor Pena
+                                            </p>
+                                            <p
+                                                class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                                Java
+                                                Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1 pb-0.5">
+                                        <span>
+                                            <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                                    fill="#FFC700" />
+                                            </svg>
+
+                                        </span>
+                                        <p class="text-green">Experience: 10 Years</p>
+                                    </div>
+                                    <p
+                                        class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                                        “Senectus tempus
+                                        porttitor sed
+                                        id dignissim. At et
+                                        euismod
+                                        adipiscing mattis
+                                        vestibulum odio.
+                                        Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide !w-[318px] sm:w-full">
+                                <div
+                                    class="max-w-[308px] sm:max-w-[461px] shadow-[0_4px_10px_0px_#00000014] bg-white max-h-[208px] lg:max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                                    <div class="flex gap-[10px]">
+                                        <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                            src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                                        <div>
+                                            <p class="text-dark-black text-lg font-semibold leading-117 font-inter">
+                                                Eleanor Pena
+                                            </p>
+                                            <p
+                                                class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                                Java
+                                                Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1 pb-0.5">
+                                        <span>
+                                            <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                                    fill="#FFC700" />
+                                            </svg>
+
+                                        </span>
+                                        <p class="text-green">Experience: 10 Years</p>
+                                    </div>
+                                    <p
+                                        class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                                        “Senectus tempus
+                                        porttitor sed
+                                        id dignissim. At et
+                                        euismod
+                                        adipiscing mattis
+                                        vestibulum odio.
+                                        Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide !w-[318px] sm:w-full">
+                                <div
+                                    class="max-w-[308px] sm:max-w-[461px] shadow-[0_4px_10px_0px_#00000014] bg-white max-h-[208px] lg:max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                                    <div class="flex gap-[10px]">
+                                        <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                            src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                                        <div>
+                                            <p class="text-dark-black text-lg font-semibold leading-117 font-inter">
+                                                Eleanor Pena
+                                            </p>
+                                            <p
+                                                class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                                Java
+                                                Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1 pb-0.5">
+                                        <span>
+                                            <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                                    fill="#FFC700" />
+                                            </svg>
+
+                                        </span>
+                                        <p class="text-green">Experience: 10 Years</p>
+                                    </div>
+                                    <p
+                                        class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                                        “Senectus tempus
+                                        porttitor sed
+                                        id dignissim. At et
+                                        euismod
+                                        adipiscing mattis
+                                        vestibulum odio.
+                                        Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide !w-[318px] sm:w-full">
+                                <div
+                                    class="max-w-[308px] sm:max-w-[461px] bg-white max-h-[208px] shadow-[0_4px_10px_0px_#00000014] lg:max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
+                                    <div class="flex gap-[10px]">
+                                        <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
+                                            src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
+                                        <div>
+                                            <p class="text-dark-black text-lg font-semibold leading-117 font-inter">
+                                                Eleanor Pena
+                                            </p>
+                                            <p
+                                                class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
+                                                Java
+                                                Developer</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between pt-1 pb-0.5">
+                                        <span>
+                                            <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
+                                                    fill="#FFC700" />
+                                                <path
+                                                    d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
+                                                    fill="#FFC700" />
+                                            </svg>
+
+                                        </span>
+                                        <p class="text-green">Experience: 10 Years</p>
+                                    </div>
+                                    <p
+                                        class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
+                                        “Senectus tempus
+                                        porttitor sed
+                                        id dignissim. At et
+                                        euismod
+                                        adipiscing mattis
+                                        vestibulum odio.
+                                        Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="flex items-center justify-between pt-1 pb-0.5">
-                            <span>
-                                <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
-                                        fill="#FFC700" />
-                                </svg>
 
-                            </span>
-                            <p class="text-green">Experience: 10 Years</p>
-                        </div>
-                        <p class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
-                            “Senectus tempus
-                            porttitor sed
-                            id dignissim. At et
-                            euismod
-                            adipiscing mattis
-                            vestibulum odio.
-                            Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
-                    </div>
-                    <div
-                        class="max-w-[461px] mt-2 bg-white max-h-[179px]  border border-light-grey px-2 py-3 rounded-[12px]">
-                        <div class="flex gap-[10px]">
-                            <img class="w-[62px] h-[62px] rounded-[12px] overflow-hidden"
-                                src="./assets/images/webp/elneanor-img.webp" alt="developer's image">
-                            <div>
-                                <p class="text-dark-black text-lg font-semibold leading-117 font-inter">Eleanor Pena</p>
-                                <p class="text-base font-normal text-black opacity-60 font-inter leading-150 pt-1.5">
-                                    Java
-                                    Developer</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between pt-1 pb-0.5">
-                            <span>
-                                <svg width="75" height="13" viewBox="0 0 75 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.81651 0.603516L7.1224 4.62263L11.3483 4.62263L7.92949 7.10658L9.23538 11.1257L5.81651 8.64174L2.39765 11.1257L3.70354 7.10658L0.28468 4.62263L4.51063 4.62263L5.81651 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M21.6041 0.603516L22.91 4.62263L27.1359 4.62263L23.7171 7.10658L25.023 11.1257L21.6041 8.64174L18.1853 11.1257L19.4911 7.10658L16.0723 4.62263L20.2982 4.62263L21.6041 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M37.3917 0.603516L38.6976 4.62263L42.9235 4.62263L39.5047 7.10658L40.8106 11.1257L37.3917 8.64174L33.9728 11.1257L35.2787 7.10658L31.8599 4.62263L36.0858 4.62263L37.3917 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M53.1798 0.603516L54.4857 4.62263L58.7116 4.62263L55.2928 7.10658L56.5987 11.1257L53.1798 8.64174L49.7609 11.1257L51.0668 7.10658L47.648 4.62263L51.8739 4.62263L53.1798 0.603516Z"
-                                        fill="#FFC700" />
-                                    <path
-                                        d="M68.9674 0.603516L70.2733 4.62263L74.4992 4.62263L71.0804 7.10658L72.3863 11.1257L68.9674 8.64174L65.5485 11.1257L66.8544 7.10658L63.4356 4.62263L67.6615 4.62263L68.9674 0.603516Z"
-                                        fill="#FFC700" />
-                                </svg>
-
-                            </span>
-                            <p class="text-green">Experience: 10 Years</p>
-                        </div>
-                        <p class="text-sm font-normal font-inter text-black opacity-70 max-w-[436px] leading-150">
-                            “Senectus tempus
-                            porttitor sed
-                            id dignissim. At et
-                            euismod
-                            adipiscing mattis
-                            vestibulum odio.
-                            Curabitur consectetur commodo neque nullam aenean molestie tristique.</p>
                     </div>
                 </div>
             </div>
@@ -512,16 +832,53 @@
             video.pause();
             video.currentTime = 0;
         };
-
         document.getElementById('close-modal').addEventListener('click', CLOSE_MODAL);
-
         document.getElementById('developer-video').addEventListener('ended', CLOSE_MODAL);
-
-
-
-
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./tailwind.config.js"></script>
+    <script>
+        // const swiper = new Swiper('.developer-swiper', {
+        //     loop: false,
+        //     autoplay: {
+        //         delay: 3000,
+        //         disableOnInteraction: false,
+        //     },
+
+        //     breakpoints: {
+        //         640: {
+        //             slidesPerView: 1.5,
+        //             spaceBetween: 10,
+        //         },
+        //         768: {
+        //             slidesPerView: 1.5,
+        //             spaceBetween: 20,
+        //         },
+        //         1024: {
+        //             slidesPerView: 2,
+        //             spaceBetween: 30,
+        //         },
+        //     },
+        // });
+        var swiperN = new Swiper(".developer-swiper", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+        });
+    </script>
 </body>
 
 </html>
