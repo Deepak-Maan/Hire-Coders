@@ -255,13 +255,13 @@
 
     <!-- CHAT SECTION -->
 
-    <section class="relative overflow-x-clip">
-        <img class="absolute  -top-[12%] left-[-36%] pointer-events-none" src="./assets/images/webp/earth-layer.png"
-            alt="earth-layer">
-        <img class="absolute left-0 top-[30%] pointer-events-none " src="./assets/images/webp/left-thread.png"
-            alt="left-thread">
-        <img class="absolute right-0 top-[5%] pointer-events-none -z-[1]" src="./assets/images/webp/right-thread.png"
-            alt="right-thread">
+    <section class="relative overflow-hidden xl:overflow-visible ">
+        <img class="absolute top-[-4%]  sm:-top-[12%] left-[-36%] pointer-events-none"
+            src="./assets/images/webp/earth-layer.png" alt="earth-layer">
+        <img class="absolute lg:left-0 -left-1/2 top-[15%] lg:top-[30%] pointer-events-none "
+            src="./assets/images/webp/left-thread.png" alt="left-thread">
+        <img class="absolute lg:right-0 right-[-66%] top-[29%] lg:top-[5%] pointer-events-none -z-[1]"
+            src="./assets/images/webp/right-thread.png" alt="right-thread">
         <div class="container mx-auto px-4 xl:max-w-[1172px] pb-[192px] pt-[109px]">
             <h2
                 class="text-custom-lg sm:text-3xl md:text-4xl lg:text-5xl max-w-[285px] leading-117 sm:max-w-[535px] pb-[52px] mx-auto text-center font-semibold font-outfit">
@@ -761,113 +761,173 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper pt-10 video-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="group duration-300 max-w-[182px]">
-                            <div onclick="PLAY_VIDEO()"
-                                class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
-                                <img class="group-hover:scale-[1.1] duration-300"
-                                    src="./assets/images/webp/cody-image.png" alt="developer's image">
-                                <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                                    src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+            <div class="relative">
+                <div
+                    class="size-[35px] absolute border border-green bg-transparent group hover:bg-green duration-300 left-[35%] sm:left-[40%] xl:left-[-5%] duration-300 bottom-[-40%] xl:top-[40%] left-arrow bg-green rounded-full flex justify-center items-center">
+                    <svg class="fill-green group-hover:fill-white" width="15" height="15" viewBox="0 0 15 15"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-green group-hover:fill-white duration-300"
+                            d="M13.9166 6.66316H3.67739L8.15072 2.18983C8.50822 1.83233 8.50822 1.24566 8.15072 0.88816C8.06592 0.803182 7.96519 0.735763 7.8543 0.689764C7.7434 0.643764 7.62453 0.620087 7.50447 0.620087C7.38442 0.620087 7.26554 0.643764 7.15465 0.689764C7.04376 0.735763 6.94303 0.803182 6.85822 0.88816L0.81739 6.92899C0.732412 7.0138 0.664993 7.11453 0.618994 7.22542C0.572994 7.33631 0.549316 7.45519 0.549316 7.57524C0.549316 7.6953 0.572994 7.81417 0.618994 7.92507C0.664993 8.03596 0.732412 8.13669 0.81739 8.22149L6.85822 14.2623C6.94309 14.3472 7.04384 14.4145 7.15473 14.4604C7.26561 14.5064 7.38445 14.53 7.50447 14.53C7.62449 14.53 7.74334 14.5064 7.85422 14.4604C7.96511 14.4145 8.06586 14.3472 8.15072 14.2623C8.23559 14.1775 8.30291 14.0767 8.34884 13.9658C8.39477 13.8549 8.41841 13.7361 8.41841 13.6161C8.41841 13.4961 8.39477 13.3772 8.34884 13.2663C8.30291 13.1554 8.23559 13.0547 8.15072 12.9698L3.67739 8.49649H13.9166C14.4207 8.49649 14.8332 8.08399 14.8332 7.57983C14.8332 7.07566 14.4207 6.66316 13.9166 6.66316Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <div
+                    class="size-[35px] absolute border border-green bg-transparent group hover:bg-green duration-300 right-[35%] sm:right-[40%] xl:right-[-5%] duration-300 bottom-[-40%] xl:top-[40%] right-arrow bg-green rounded-full flex justify-center items-center">
+                    <svg class="rotate-180 fill-green group-hover:fill-white duration-300" width="15" height="15"
+                        viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="fill-green group-hover:fill-white duration-300"
+                            d="M13.9166 6.66316H3.67739L8.15072 2.18983C8.50822 1.83233 8.50822 1.24566 8.15072 0.88816C8.06592 0.803182 7.96519 0.735763 7.8543 0.689764C7.7434 0.643764 7.62453 0.620087 7.50447 0.620087C7.38442 0.620087 7.26554 0.643764 7.15465 0.689764C7.04376 0.735763 6.94303 0.803182 6.85822 0.88816L0.81739 6.92899C0.732412 7.0138 0.664993 7.11453 0.618994 7.22542C0.572994 7.33631 0.549316 7.45519 0.549316 7.57524C0.549316 7.6953 0.572994 7.81417 0.618994 7.92507C0.664993 8.03596 0.732412 8.13669 0.81739 8.22149L6.85822 14.2623C6.94309 14.3472 7.04384 14.4145 7.15473 14.4604C7.26561 14.5064 7.38445 14.53 7.50447 14.53C7.62449 14.53 7.74334 14.5064 7.85422 14.4604C7.96511 14.4145 8.06586 14.3472 8.15072 14.2623C8.23559 14.1775 8.30291 14.0767 8.34884 13.9658C8.39477 13.8549 8.41841 13.7361 8.41841 13.6161C8.41841 13.4961 8.39477 13.3772 8.34884 13.2663C8.30291 13.1554 8.23559 13.0547 8.15072 12.9698L3.67739 8.49649H13.9166C14.4207 8.49649 14.8332 8.08399 14.8332 7.57983C14.8332 7.07566 14.4207 6.66316 13.9166 6.66316Z"
+                            fill="white" />
+                    </svg>
+                </div>
+                <div class="swiper pt-10 video-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="group duration-300 max-w-[182px]">
+                                <div onclick="PLAY_VIDEO()"
+                                    class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
+                                    <img class="group-hover:scale-[1.1] duration-300"
+                                        src="./assets/images/webp/edwards-image.png" alt="developer's image">
+                                    <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                        src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                                </div>
+                                <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Ralph
+                                    Edwards
+                                </p>
+                                <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
+                                    Developer</p>
                             </div>
-                            <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Ralph
-                                Edwards
-                            </p>
-                            <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
-                                Developer</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="group duration-300 max-w-[182px]">
-                            <div onclick="PLAY_VIDEO()"
-                                class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
-                                <img class="group-hover:scale-[1.1] duration-300"
-                                    src="./assets/images/webp/cody-image.png" alt="developer's image">
-                                <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                                    src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                        <div class="swiper-slide">
+                            <div class="group duration-300 max-w-[182px]">
+                                <div onclick="PLAY_VIDEO()"
+                                    class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
+                                    <img class="group-hover:scale-[1.1] duration-300"
+                                        src="./assets/images/webp/cody-image.png" alt="developer's image">
+                                    <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                        src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                                </div>
+                                <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Cody
+                                    Fisher
+                                </p>
+                                <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
+                                    Developer</p>
                             </div>
-                            <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Ralph
-                                Edwards
-                            </p>
-                            <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
-                                Developer</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="group duration-300 max-w-[182px]">
-                            <div onclick="PLAY_VIDEO()"
-                                class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
-                                <img class="group-hover:scale-[1.1] duration-300"
-                                    src="./assets/images/webp/cody-image.png" alt="developer's image">
-                                <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                                    src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                        <div class="swiper-slide">
+                            <div class="group duration-300 max-w-[182px]">
+                                <div onclick="PLAY_VIDEO()"
+                                    class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
+                                    <img class="group-hover:scale-[1.1] duration-300"
+                                        src="./assets/images/webp/arlene-image.png" alt="developer's image">
+                                    <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                        src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                                </div>
+                                <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Arlene
+                                    McCoy
+                                </p>
+                                <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
+                                    Developer</p>
                             </div>
-                            <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Ralph
-                                Edwards
-                            </p>
-                            <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
-                                Developer</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="group duration-300 max-w-[182px]">
-                            <div onclick="PLAY_VIDEO()"
-                                class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
-                                <img class="group-hover:scale-[1.1] duration-300"
-                                    src="./assets/images/webp/cody-image.png" alt="developer's image">
-                                <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                                    src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                        <div class="swiper-slide">
+                            <div class="group duration-300 max-w-[182px]">
+                                <div onclick="PLAY_VIDEO()"
+                                    class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
+                                    <img class="group-hover:scale-[1.1] duration-300"
+                                        src="./assets/images/webp/esther-image.png" alt="developer's image">
+                                    <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                        src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                                </div>
+                                <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Esther
+                                    Howard
+                                </p>
+                                <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
+                                    Developer</p>
                             </div>
-                            <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Ralph
-                                Edwards
-                            </p>
-                            <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
-                                Developer</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="group duration-300 max-w-[182px]">
-                            <div onclick="PLAY_VIDEO()"
-                                class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
-                                <img class="group-hover:scale-[1.1] duration-300"
-                                    src="./assets/images/webp/cody-image.png" alt="developer's image">
-                                <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                                    src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                        <div class="swiper-slide">
+                            <div class="group duration-300 max-w-[182px]">
+                                <div onclick="PLAY_VIDEO()"
+                                    class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
+                                    <img class="group-hover:scale-[1.1] duration-300"
+                                        src="./assets/images/webp/ronald-image.png" alt="developer's image">
+                                    <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                        src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                                </div>
+                                <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Ronald
+                                    Richards
+                                </p>
+                                <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
+                                    Developer</p>
                             </div>
-                            <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Ralph
-                                Edwards
-                            </p>
-                            <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
-                                Developer</p>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="group duration-300 max-w-[182px]">
-                            <div onclick="PLAY_VIDEO()"
-                                class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
-                                <img class="group-hover:scale-[1.1] duration-300"
-                                    src="./assets/images/webp/cody-image.png" alt="developer's image">
-                                <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-                                    src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                        <div class="swiper-slide">
+                            <div class="group duration-300 max-w-[182px]">
+                                <div onclick="PLAY_VIDEO()"
+                                    class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
+                                    <img class="group-hover:scale-[1.1] duration-300"
+                                        src="./assets/images/webp/dianne-image.png" alt="developer's image">
+                                    <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                        src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                                </div>
+                                <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Dianne
+                                    Russell
+                                </p>
+                                <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
+                                    Developer</p>
                             </div>
-                            <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Ralph
-                                Edwards
-                            </p>
-                            <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
-                                Developer</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="group duration-300 max-w-[182px]">
+                                <div onclick="PLAY_VIDEO()"
+                                    class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
+                                    <img class="group-hover:scale-[1.1] duration-300"
+                                        src="./assets/images/webp/esther-image.png" alt="developer's image">
+                                    <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                        src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                                </div>
+                                <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Esther
+                                    Howard
+                                </p>
+                                <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
+                                    Developer</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="group duration-300 max-w-[182px]">
+                                <div onclick="PLAY_VIDEO()"
+                                    class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
+                                    <img class="group-hover:scale-[1.1] duration-300"
+                                        src="./assets/images/webp/ronald-image.png" alt="developer's image">
+                                    <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                        src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                                </div>
+                                <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Ronald
+                                    Richards
+                                </p>
+                                <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
+                                    Developer</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="group duration-300 max-w-[182px]">
+                                <div onclick="PLAY_VIDEO()"
+                                    class="sm:w-[182px] w-[163px] h-[148px] sm:h-[162px] cursor-pointer relative overflow-hidden rounded-[12px]">
+                                    <img class="group-hover:scale-[1.1] duration-300"
+                                        src="./assets/images/webp/dianne-image.png" alt="developer's image">
+                                    <img class="absolute sm:h-9 sm:w-9 w-8 h-8  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                        src="./assets/images/svg/play-icon2.svg" alt="play-icon">
+                                </div>
+                                <p class="text-lg font-semibold font-inter text-dark-black leading-126 pt-3 pb-2">Dianne
+                                    Russell
+                                </p>
+                                <p class="text-base font-normal font-inter leading-150 opacity-60 text-dark-black">Java
+                                    Developer</p>
+                            </div>
                         </div>
                     </div>
 
-
-                    <!-- <div class="size-[35px] bg-green rounded-full flex justify-center items-center">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13.9166 6.66316H3.67739L8.15072 2.18983C8.50822 1.83233 8.50822 1.24566 8.15072 0.88816C8.06592 0.803182 7.96519 0.735763 7.8543 0.689764C7.7434 0.643764 7.62453 0.620087 7.50447 0.620087C7.38442 0.620087 7.26554 0.643764 7.15465 0.689764C7.04376 0.735763 6.94303 0.803182 6.85822 0.88816L0.81739 6.92899C0.732412 7.0138 0.664993 7.11453 0.618994 7.22542C0.572994 7.33631 0.549316 7.45519 0.549316 7.57524C0.549316 7.6953 0.572994 7.81417 0.618994 7.92507C0.664993 8.03596 0.732412 8.13669 0.81739 8.22149L6.85822 14.2623C6.94309 14.3472 7.04384 14.4145 7.15473 14.4604C7.26561 14.5064 7.38445 14.53 7.50447 14.53C7.62449 14.53 7.74334 14.5064 7.85422 14.4604C7.96511 14.4145 8.06586 14.3472 8.15072 14.2623C8.23559 14.1775 8.30291 14.0767 8.34884 13.9658C8.39477 13.8549 8.41841 13.7361 8.41841 13.6161C8.41841 13.4961 8.39477 13.3772 8.34884 13.2663C8.30291 13.1554 8.23559 13.0547 8.15072 12.9698L3.67739 8.49649H13.9166C14.4207 8.49649 14.8332 8.08399 14.8332 7.57983C14.8332 7.07566 14.4207 6.66316 13.9166 6.66316Z"
-                                fill="white" />
-                        </svg>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -892,23 +952,26 @@
                 <div class="flex flex-wrap justify-between pt-12 md:pt-[60px] lg:pt-[83px] gap-6 xl:gap-8">
 
                     <div class="flex flex-col">
-                        <a href="#"
-                            class="sm:max-w-[149px] flex flex-col items-center sm:h-[71px] max-w-[113px] h-[54px]"><img
-                                src="./assets/images/svg/footer-logo.svg" alt="logo">
-                            <p class="font-robotoCondensed font-light text-custom-sm text-white text-nowrap pt-1 ">Video
+                        <a href="#" class="max-w-[149px] flex flex-col  items-center sm:h-[71px]  h-[54px]">
+                            <img class="mx-auto hidden sm:block" src="./assets/images/svg/footer-logo.svg" alt="logo">
+                            <img class="mx-auto block sm:hidden max-h-[54px] "
+                                src="./assets/images/svg/white-footer-logo.svg" alt="logo">
+                            <p class="font-robotoCondensed font-light text-custom-sm text-white text-nowrap pt-1 ">
+                                Video
                                 chat &
                                 Remote
                                 Coder
                                 OnDemand</p>
                         </a>
                         <p
-                            class="font-inter font-normal leading-6 max-w-[500px] lg:max-w-[238px] xl:max-w-[266px] text-white mt-4 opacity-60">
+                            class="font-inter font-normal leading-6 max-w-[500px] lg:max-w-[238px] xl:max-w-[266px] text-white mt-8 opacity-60">
                             We take pride in our team dedicated coders, continuously striving for you
                             excellence in
                             every project.</p>
                     </div>
 
-                    <div class="flex flex-wrap sm:justify-between gap-x-[85px] sm:gap-9 sm:gap-12 xl:gap-[74px]">
+                    <div
+                        class="flex flex-wrap sm:justify-between gap-y-9 gap-x-[85px] sm:gap-9 sm:gap-12 xl:gap-[74px]">
 
                         <ul>
                             <li class="font-inter font-normal text-sm leading-6 text-white mb-3">Home</li>
@@ -974,7 +1037,7 @@
 
                         </ul>
 
-                        <div class="flex flex-col pt-7 pt-sm-0">
+                        <div class="flex flex-col">
                             <li class="font-inter font-normal text-sm leading-6 list-none text-white mb-3">Follow Us
                             </li>
                             <div class="flex gap-3 sm:gap-4">
@@ -1096,14 +1159,17 @@
             },
             slidesPerView: 6,
             spaceBetween: 10,
-
+            navigation: {
+                nextEl: ".left-arrow",
+                prevEl: ".right-arrow",
+            },
 
             breakpoints: {
                 375: {
                     slidesPerView: 2,
                     spaceBetween: 10,
                 },
-                640: {
+                530: {
                     slidesPerView: 3,
                     spaceBetween: 10,
                 },
@@ -1133,10 +1199,7 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+
 
         });
     </script>
